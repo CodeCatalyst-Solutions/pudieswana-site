@@ -10,7 +10,7 @@ export default function Contact() {
         <input className="w-full p-3 bg-gray-800 rounded" placeholder="Email" />
         <textarea className="w-full p-3 bg-gray-800 rounded" placeholder="Message" />
 
-        <button className="w-full bg-purple-600 py-3 rounded">
+        <button className="w-full bg-purple-600 py-3 rounded-full">
           Send Message
         </button>
       </div>
