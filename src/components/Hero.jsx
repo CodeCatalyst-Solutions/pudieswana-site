@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-gray-950 via-gray-900 to-purple-900 text-white py-24">
+    <section className="text-white py-24">
       <div className="max-w-7xl mx-auto px-6 text-center">
         
         {/* Heading */}
