@@ -8,16 +8,18 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row justify-between items-start gap-10">
-          <div className="flex items-center gap-2">
-            <img
-              src="/pudieswana-logo.png"
-              alt="Pudieswana"
-              className="h-8 w-8 object-contain"
-            />
-            <span className="text-white font-bold text-lg">
-              Pudieswana Engineering & Mining
-            </span>
-          </div>
+          <Link to="/" className="hover:text-white">
+            <div className="flex items-center gap-2">
+              <img
+                src="/pudieswana-logo.png"
+                alt="Pudieswana"
+                className="h-8 w-8 object-contain"
+              />
+              <span className="text-white font-bold text-lg">
+                Pudieswana Engineering & Mining
+              </span>
+            </div>
+          </Link>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-left w-full sm:w-auto">
             <div>
