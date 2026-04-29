@@ -4,11 +4,24 @@ export default function Footer() {
   return (
     <footer className="text-gray-400 px-6 py-16">
       <div className="max-w-7xl mx-auto">
-        {/* Bottom row: logo left, columns right */}
-        <div className="flex justify-between items-start">
+
+        {/* CTA */}
+        <div className="text-center mb-16">
+          <p className="text-gray-400 mb-4">Contact us today.</p>
+          <Link to="/contact">
+            <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+              Get in Touch
+            </button>
+          </Link>
+        </div>
+
+        <hr className="border-white/10 mb-12" />
+
+        {/* Bottom row */}
+        <div className="flex flex-col sm:flex-row justify-between items-start gap-10">
           <span className="text-white font-bold text-lg">Pudieswana</span>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 text-left">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-left w-full sm:w-auto">
             <div>
               <h4 className="text-white font-semibold mb-3">Company</h4>
               <ul className="space-y-2 text-sm">
@@ -17,7 +30,6 @@ export default function Footer() {
                 <li><Link to="/projects" className="hover:text-white">Projects</Link></li>
               </ul>
             </div>
-
             <div>
               <h4 className="text-white font-semibold mb-3">Solutions</h4>
               <ul className="space-y-2 text-sm">
@@ -26,7 +38,6 @@ export default function Footer() {
                 <li>Supply</li>
               </ul>
             </div>
-
             <div>
               <h4 className="text-white font-semibold mb-3">Industries</h4>
               <ul className="space-y-2 text-sm">
@@ -35,7 +46,6 @@ export default function Footer() {
                 <li>Cleaning</li>
               </ul>
             </div>
-
             <div>
               <h4 className="text-white font-semibold mb-3">Contact</h4>
               <ul className="space-y-2 text-sm">

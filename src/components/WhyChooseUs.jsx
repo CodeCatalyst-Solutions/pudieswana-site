@@ -9,15 +9,22 @@ const points = [
 export default function WhyChooseUs() {
   return (
     <section className="py-20 px-6 text-white">
-      <h2 className="text-3xl font-bold text-center text-purple-500 mb-10">
-        Why Choose Us
-      </h2>
-
-      <ul className="max-w-3xl mx-auto space-y-4 text-center text-gray-300">
-        {points.map((p, i) => (
-          <li key={i}>• {p}</li>
-        ))}
-      </ul>
+      {/* Why Choose Us */}
+        <div className="text-left mt-10 pt-10 border-t border-white/10">
+          <h3 className="text-white font-semibold mb-2">Why Choose Us</h3>
+          <p className="text-gray-400 text-sm max-w-lg">
+            Our ISO-standard work processes ensure every project exceeds industry
+            benchmarks for quality and safety.
+            <br />
+            <br />
+            We employ a highly skilled and experienced workforce focused on innovative 
+            solutions and strict compliance.
+            <br />
+            <br />
+            We are committed to community upliftment and provide custom solutions 
+            tailored to each client’s unique needs.
+          </p>
+        </div>
     </section>
   );
 }

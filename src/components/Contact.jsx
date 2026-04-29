@@ -1,23 +1,27 @@
 export default function Contact() {
   return (
     <section id="contact" className="py-20 px-6 text-white">
-      <h2 className="text-3xl font-bold text-center text-purple-500 mb-10">
-        Contact Us
-      </h2>
+      <div className="max-w-7xl mx-auto px-4 text-center">
 
-      <div className="max-w-xl mx-auto space-y-4">
-        <input className="w-full p-3 bg-gray-800 rounded" placeholder="Name" />
-        <input className="w-full p-3 bg-gray-800 rounded" placeholder="Email" />
-        <textarea className="w-full p-3 bg-gray-800 rounded" placeholder="Message" />
+        <h1 className="text-purple-500 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
+          Contact Us <br />
+          <span className="text-gray-300 text-xl sm:text-2xl font-normal">We're here to support your business.</span>
+        </h1>
 
-        <button className="w-full bg-purple-600 py-3 rounded-full">
-          Send Message
-        </button>
+        <div className="mt-10 text-gray-400 text-sm">
+          Kuruman, South Africa · Phone: +27 00 000 0000 · Email: info@pudieswana.co.za
+        </div>
+
+        <div className="mt-12 max-w-xl mx-auto space-y-4 text-left">
+          <input className="w-full p-3 bg-gray-800 rounded-xl text-white placeholder-gray-500" placeholder="Name" />
+          <input className="w-full p-3 bg-gray-800 rounded-xl text-white placeholder-gray-500" placeholder="Email" />
+          <textarea className="w-full p-3 bg-gray-800 rounded-xl text-white placeholder-gray-500 h-32" placeholder="Message" />
+          <button className="w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-full font-semibold">
+            Send Message
+          </button>
+        </div>
+
       </div>
-
-      <p className="text-center text-gray-400 mt-6">
-        Kuruman, South Africa
-      </p>
     </section>
   );
 }
