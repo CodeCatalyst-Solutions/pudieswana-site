@@ -34,11 +34,11 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-6 pb-4 space-y-3">
-          <Link to="/" className="block hover:text-green-400">Home</Link>
-          <Link to="/about" className="block hover:text-green-400">About</Link>
-          <Link to="/services" className="block hover:text-green-400">Services</Link>
-          <Link to="/projects" className="block hover:text-green-400">Projects</Link>
-          <Link to="/contact" className="block hover:text-green-400">Contact</Link>
+          <Link to="/" className="block hover:text-green-400" onClick={() => setIsOpen(false)}>Home</Link>
+          <Link to="/about" className="block hover:text-green-400" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/services" className="block hover:text-green-400" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link to="/projects" className="block hover:text-green-400" onClick={() => setIsOpen(false)}>Projects</Link>
+          <Link to="/contact" className="block hover:text-green-400" onClick={() => setIsOpen(false)}>Contact</Link>
         </div>
       )}
     </nav>
