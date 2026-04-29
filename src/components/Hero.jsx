@@ -49,7 +49,7 @@ export default function Hero() {
               <div className="flex-1 flex items-center justify-center">
                 <div className="w-16 h-16 bg-white/20 rounded-xl" />
               </div>
-              <div className="text-left mt-6">
+              <div className="text-center mt-6">
                 <p className="text-sm text-gray-400 mb-1">{category}</p>
                 <h3 className="text-white font-semibold text-lg">{title}</h3>
               </div>
