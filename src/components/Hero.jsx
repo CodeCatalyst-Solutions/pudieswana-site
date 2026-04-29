@@ -1,4 +1,13 @@
-import { Wrench, Brush, Package, BadgeCheck, ShieldCheck, Users, Leaf, Puzzle } from "lucide-react";
+import {
+  Wrench,
+  Brush,
+  Package,
+  BadgeCheck,
+  ShieldCheck,
+  Users,
+  Leaf,
+  Puzzle,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const features = [
@@ -16,18 +25,26 @@ export default function Hero() {
   return (
     <section className="text-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
-
         {/* Full viewport hero */}
         <div className="min-h-screen flex flex-col items-center justify-center pb-24 px-4">
           <h1 className="text-purple-500 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
             Engineering & Mining Solutions You Can Trust <br />
             <span className="text-gray-300 text-xl sm:text-2xl md:text-3xl font-normal">
-              Delivering high-quality engineering, mining, and construction services since 2014.
+              Delivering high-quality engineering, mining, and construction
+              services since 2014.
             </span>
           </h1>
           <div className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
-            <Link to="/contact"><button className="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full font-semibold">Request a Quote</button></Link>
-            <Link to="/services"><button className="w-full sm:w-auto border border-green-400 text-green-400 hover:bg-green-400 hover:text-black px-6 py-3 rounded-full font-semibold">Our Services</button></Link>
+            <Link to="/contact">
+              <button className="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full font-semibold">
+                Request a Quote
+              </button>
+            </Link>
+            <Link to="/services">
+              <button className="w-full sm:w-auto border border-green-400 text-green-400 hover:bg-green-400 hover:text-black px-6 py-3 rounded-full font-semibold">
+                Our Services
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -38,7 +55,10 @@ export default function Hero() {
             { category: "Mining", title: "Exploration & extraction" },
             { category: "Construction", title: "Buildings & infrastructure" },
           ].map(({ category, title }) => (
-            <div key={category} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col min-h-64">
+            <div
+              key={category}
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col min-h-64"
+            >
               <div className="flex-1 flex items-center justify-center">
                 <div className="w-16 h-16 bg-white/20 rounded-xl" />
               </div>
@@ -74,11 +94,16 @@ export default function Hero() {
         <div className="text-left mt-10 pt-10 border-t border-white/10">
           <h3 className="text-white font-semibold mb-2">Why Choose Us</h3>
           <p className="text-gray-400 text-sm max-w-lg">
-            Our ISO-standard work processes ensure every project exceeds industry benchmarks for quality and safety.
-            <br /><br />
-            We employ a highly skilled and experienced workforce focused on innovative solutions and strict compliance.
-            <br /><br />
-            We are committed to community upliftment and provide custom solutions tailored to each client's unique needs.
+            Our ISO-standard work processes ensure every project exceeds
+            industry benchmarks for quality and safety.
+            <br />
+            <br />
+            We employ a highly skilled and experienced workforce focused on
+            innovative solutions and strict compliance.
+            <br />
+            <br />
+            We are committed to community upliftment and provide custom
+            solutions tailored to each client's unique needs.
           </p>
         </div>
 
@@ -89,10 +114,13 @@ export default function Hero() {
             <span className="text-gray-300">Contact us today.</span>
           </h1>
           <div className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
-            <Link to="/contact"><button className="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full font-semibold">Get In Touch</button></Link>
+            <Link to="/contact">
+              <button className="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full font-semibold">
+                Get In Touch
+              </button>
+            </Link>
           </div>
         </div>
-
       </div>
     </section>
   );
