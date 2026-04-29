@@ -37,9 +37,29 @@ export default function Contact() {
           </span>
         </h1>
 
-        <div className="mt-10 text-gray-400 text-sm">
-          Kuruman, South Africa · Phone: +27 00 000 0000 · Email:
-          info@pudieswana.co.za
+        <div className="mt-10 text-gray-400 text-sm space-y-1">
+          <p>📍 Kuruman, South Africa</p>
+
+          <p>
+            📞 Albert Maphanga:{" "}
+            <a href="tel:+27729179369" className="hover:text-white">
+              +27 72 917 9369
+            </a>
+          </p>
+
+          <p>
+            📞 Tumisang Kaekae:{" "}
+            <a href="tel:+27736855060" className="hover:text-white">
+              +27 73 685 5060
+            </a>
+          </p>
+
+          <p>
+            ✉️{" "}
+            <a href="mailto:info@pudieswana.co.za" className="hover:text-white">
+              info@pudieswana.co.za
+            </a>
+          </p>
         </div>
 
         {submitted ? (
