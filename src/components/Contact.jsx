@@ -11,7 +11,9 @@ export default function Contact() {
 
         <div className="mt-10 text-gray-400 text-sm">
           Kuruman, South Africa · Phone: +27 00 000 0000 · Email:
-          info@pudieswana.co.za
+          <a href="mailto:info@pudieswana.co.za" className="hover:text-white">
+            info@pudieswana.co.za
+          </a>
         </div>
 
         <div className="mt-12 max-w-xl mx-auto space-y-4 text-left">

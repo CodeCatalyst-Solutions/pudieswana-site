@@ -61,7 +61,9 @@ export default function Footer() {
               <h4 className="text-white font-semibold mb-3">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li>Kuruman, South Africa</li>
-                <li>info@pudieswana.co.za</li>
+                <li><a href="mailto:info@pudieswana.co.za" className="hover:text-white">
+                  info@pudieswana.co.za
+                </a></li>
                 <li className="text-purple-400">
                   Built by CodeCatalyst Solutions
                 </li>
