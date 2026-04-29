@@ -38,7 +38,7 @@ export default function Contact() {
         </h1>
 
         <div className="mt-10 text-gray-400 text-sm space-y-1">
-          <p>📍 Kuruman, South Africa</p>
+          <p>📍 Randfontein, Gauteng, South Africa</p>
 
           <p>
             📞 Albert Maphanga:{" "}

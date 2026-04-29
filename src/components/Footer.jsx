@@ -59,7 +59,7 @@ export default function Footer() {
             <div>
               <h4 className="text-white font-semibold mb-3">Contact</h4>
               <ul className="space-y-2 text-sm">
-                <li>Kuruman, South Africa</li>
+                <li>Randfontein, Gauteng, South Africa</li>
                 <li>
                   <a
                     href="mailto:info@pudieswana.co.za"
