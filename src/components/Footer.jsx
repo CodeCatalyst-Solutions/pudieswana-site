@@ -4,16 +4,6 @@ export default function Footer() {
   return (
     <footer className="text-gray-400 px-6 py-16">
       <div className="max-w-7xl mx-auto">
-        {/* CTA */}
-        <div className="text-center mb-16">
-          <p className="text-gray-400 mb-4">Contact us today.</p>
-          <Link to="/contact">
-            <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
-              Get in Touch
-            </button>
-          </Link>
-        </div>
-
         <hr className="border-white/10 mb-12" />
 
         {/* Bottom row */}
