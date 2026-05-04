@@ -61,6 +61,19 @@ export default function Services() {
               category: "Construction",
               title: "Roads, housing, structural work",
             },
+            {
+              category: "Transportaion",
+              title: "waste removal, trucking, transporting workers",
+            },
+            {
+              category: "Cleaning",
+              title: "Offices, schools, mining sites, parks, hospitals",
+            },
+            {
+              category: "Supply",
+              title:
+                "TMM spares, lifting chains, valves, pumps, hydraulic hoses, drill steel, drill bits, bolts and nuts, and PPE",
+            },
           ].map(({ category, title }) => (
             <div
               key={category}
