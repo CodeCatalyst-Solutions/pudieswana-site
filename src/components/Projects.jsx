@@ -61,7 +61,7 @@ const projects = [
       "Underground support systems needed durable structural components.",
     solution:
       "Produced roof support face plate components for mining support use.",
-    outcome: "Strengthened the company’s underground support capability.",
+    outcome: "Strengthened the company's underground support capability.",
     image: "/number5.png",
   },
   {
@@ -86,7 +86,7 @@ const projects = [
     solution:
       "Supplied 10 mm short link GAV chain and butterfly valves for industrial use.",
     outcome:
-      "Added to the company’s supply capability for mining and engineering clients.",
+      "Added to the company's supply capability for mining and engineering clients.",
     image: "/number7.png",
   },
   {
@@ -269,11 +269,12 @@ export default function Projects() {
               onClick={() => setSelectedProject(project)}
               className="text-left bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden hover:bg-white/15 transition border border-white/5"
             >
-              <div className="w-full overflow-hidden h-56 bg-gray-900 flex items-center justify-center">
+              {/* ✅ object-cover so images fill the card container perfectly */}
+              <div className="w-full h-56 overflow-hidden bg-gray-900">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-contain object-center"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
 
@@ -309,15 +310,16 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Modal */}
+      {/* Modal — ✅ fully scrollable, full image visible */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 overflow-y-auto">
-          <div className="w-full max-w-2xl rounded-3xl overflow-hidden bg-gray-950 border border-white/10 shadow-2xl my-auto">
-            <div className="relative h-64">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
+          <div className="w-full max-w-2xl rounded-3xl bg-gray-950 border border-white/10 shadow-2xl max-h-[90vh] overflow-y-auto">
+            {/* Close button pinned to top-right of the modal box */}
+            <div className="relative">
               <img
                 src={selectedProject.image}
                 alt={selectedProject.title}
-                className="w-full h-full object-cover"
+                className="w-full rounded-t-3xl object-contain bg-gray-900"
               />
               <button
                 onClick={() => setSelectedProject(null)}
