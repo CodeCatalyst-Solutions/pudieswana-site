@@ -52,35 +52,45 @@ export default function Services() {
             {
               category: "Engineering",
               title: "Welding, fabrication, installation, inspection",
+              image: "/services/services_engineering.jpeg",
             },
             {
               category: "Mining",
               title: "Underground work, conveyors, TMM repairs",
+              image: "/services/services_mining.jpeg",
             },
             {
               category: "Construction",
               title: "Roads, housing, structural work",
+              image: "/services/services_construction.jpg",
             },
             {
               category: "Transportaion",
               title: "waste removal, trucking, transporting workers",
+              image: "/services/services_transportation.jpeg",
             },
             {
               category: "Cleaning",
               title: "Offices, schools, mining sites, parks, hospitals",
+              image: "/services/services_cleaning.jpeg",
             },
             {
               category: "Supply",
               title:
                 "TMM spares, lifting chains, valves, pumps, hydraulic hoses, drill steel, drill bits, bolts and nuts, and PPE",
+              image: "/services/services_supply.png",
             },
-          ].map(({ category, title }) => (
+          ].map(({ category, title, image }) => (
             <div
               key={category}
               className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col min-h-64"
             >
               <div className="flex-1 flex items-center justify-center">
-                <div className="w-16 h-16 bg-white/20 rounded-xl" />
+                <img
+                  src={image}
+                  alt={category}
+                  className="w-full h-40 object-cover rounded-xl"
+                />
               </div>
               <div className="text-center mt-6">
                 <p className="text-sm text-gray-400 mb-1">{category}</p>

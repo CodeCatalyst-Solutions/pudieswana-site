@@ -13,7 +13,7 @@ const projects = [
       "Fabricated spares were produced to match the required drilling equipment specifications.",
     outcome:
       "Supported equipment uptime and reduced the need for repeated part sourcing.",
-    image: "/number1.png",
+    image: "/projects/number1.png",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
       "Produced and supplied the bracket and impeller-related fabricated parts for the equipment.",
     outcome:
       "Improved part availability for ongoing maintenance and assembly work.",
-    image: "/number2.png",
+    image: "/projects/number2.png",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const projects = [
     solution:
       "Supplied a special impeller and a ball valve suited to the application.",
     outcome: "Helped keep the system aligned to mining site requirements.",
-    image: "/number3.png",
+    image: "/projects/number3.png",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const projects = [
     solution:
       "Fabricated and supplied the bracket, clamps, and fittings required for the setup.",
     outcome: "Improved installation support and component stability.",
-    image: "/number4.png",
+    image: "/projects/number4.png",
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const projects = [
     solution:
       "Produced roof support face plate components for mining support use.",
     outcome: "Strengthened the company's underground support capability.",
-    image: "/number5.png",
+    image: "/projects/number5.png",
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const projects = [
       "Completed ground ripper attachment work and conveyor belt installation, extension, splicing, and belt structure reclamation.",
     outcome:
       "Improved conveyor functionality and extended operating performance.",
-    image: "/number6.png",
+    image: "/projects/number6.png",
   },
   {
     id: 7,
@@ -87,7 +87,7 @@ const projects = [
       "Supplied 10 mm short link GAV chain and butterfly valves for industrial use.",
     outcome:
       "Added to the company's supply capability for mining and engineering clients.",
-    image: "/number7.png",
+    image: "/projects/number7.png",
   },
   {
     id: 8,
@@ -98,7 +98,7 @@ const projects = [
     solution:
       "Applied rubber lining to help protect components in demanding conditions.",
     outcome: "Improved service life and resistance to wear.",
-    image: "/number8.png",
+    image: "/projects/number8.png",
   },
   {
     id: 9,
@@ -111,7 +111,7 @@ const projects = [
       "Completed stripping, repair, refurbishment, rebuilding, and maintenance work on TMM3 units.",
     outcome:
       "Restored equipment for continued use and operational reliability.",
-    image: "/number9.png",
+    image: "/projects/number9.png",
   },
   {
     id: 10,
@@ -124,7 +124,7 @@ const projects = [
       "Used the sandblasting, welding/NDT testing, painting, and inspection bays to process and assess components.",
     outcome:
       "Created a structured workflow for quality control and maintenance.",
-    image: "/number10.png",
+    image: "/projects/number10.png",
   },
   {
     id: 11,
@@ -135,7 +135,7 @@ const projects = [
     solution:
       "Redesigned and manufactured a new hydraulic brake block to improve service access.",
     outcome: "Improved maintainability and reduced service difficulty.",
-    image: "/number11.png",
+    image: "/projects/number11.png",
   },
   {
     id: 12,
@@ -147,7 +147,7 @@ const projects = [
     solution:
       "Redesigned the overall power head frame and added DPF support to improve underground gas limitations.",
     outcome: "Improved equipment design for modern underground requirements.",
-    image: "/number12.png",
+    image: "/projects/number12.png",
   },
   {
     id: 13,
@@ -159,7 +159,7 @@ const projects = [
     solution:
       "Used the assembly bay to repair the group pump complete unit and support new generation model work.",
     outcome: "Improved repair capability and assembly output.",
-    image: "/number13.png",
+    image: "/projects/number13.png",
   },
   {
     id: 14,
@@ -170,7 +170,7 @@ const projects = [
     solution:
       "Integrated an inline priority valve into the steering system design.",
     outcome: "Enhanced steering control and system responsiveness.",
-    image: "/number14.png",
+    image: "/projects/number14.png",
   },
   {
     id: 15,
@@ -182,7 +182,7 @@ const projects = [
     solution:
       "Completed fabrication output towards assembly, including LHD Project 1 fabrication.",
     outcome: "Demonstrated strong fabrication-to-assembly capability.",
-    image: "/number15.png",
+    image: "/projects/number15.png",
   },
 ];
 
@@ -228,7 +228,7 @@ export default function Projects() {
           style={{ height: "430px" }}
         >
           <img
-            src="/number16.png"
+            src="/projects/project_featured.jpeg"
             alt="Featured project"
             className="w-full h-full object-cover"
           />

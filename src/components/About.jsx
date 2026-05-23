@@ -32,16 +32,32 @@ export default function About() {
       {/* About Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
         {[
-          { category: "BEE", title: "Empowerment" },
-          { category: "Youth", title: "Employment" },
-          { category: "Vision", title: "Quality" },
-        ].map(({ category, title }) => (
+          {
+            category: "BEE",
+            title: "Empowerment",
+            image: "/about/about_bee.jpg",
+          },
+          {
+            category: "Youth",
+            title: "Employment",
+            image: "/about/about_youth.jpg",
+          },
+          {
+            category: "Vision",
+            title: "Quality",
+            image: "/about/about_quality.jpeg",
+          },
+        ].map(({ category, title, image }) => (
           <div
             key={category}
             className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col min-h-64"
           >
             <div className="flex-1 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white/20 rounded-xl" />
+              <img
+                src={image}
+                alt={category}
+                className="w-full h-40 object-cover rounded-xl"
+              />
             </div>
             <div className="text-center mt-6">
               <p className="text-sm text-gray-400 mb-1">{category}</p>

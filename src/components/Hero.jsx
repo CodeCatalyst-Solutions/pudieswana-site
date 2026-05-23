@@ -51,16 +51,32 @@ export default function Hero() {
         {/* Service Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
           {[
-            { category: "Engineering", title: "Civil & mechanical projects" },
-            { category: "Mining", title: "Exploration & extraction" },
-            { category: "Construction", title: "Buildings & infrastructure" },
-          ].map(({ category, title }) => (
+            {
+              category: "Engineering",
+              title: "Civil & mechanical projects",
+              image: "/home/home_engineering.jpeg",
+            },
+            {
+              category: "Mining",
+              title: "Exploration & extraction",
+              image: "/home/home_mining.jpeg",
+            },
+            {
+              category: "Construction",
+              title: "Buildings & infrastructure",
+              image: "/home/home_construction.jpg",
+            },
+          ].map(({ category, title, image }) => (
             <div
               key={category}
               className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col min-h-64"
             >
               <div className="flex-1 flex items-center justify-center">
-                <div className="w-16 h-16 bg-white/20 rounded-xl" />
+                <img
+                  src={image}
+                  alt={category}
+                  className="w-full h-40 object-cover rounded-xl"
+                />
               </div>
               <div className="text-center mt-6">
                 <p className="text-sm text-gray-400 mb-1">{category}</p>
