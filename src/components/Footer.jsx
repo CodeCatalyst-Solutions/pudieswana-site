@@ -71,7 +71,9 @@ export default function Footer() {
                   </a>
                 </li>
                 <li className="text-purple-400">
-                  Built by CodeCatalyst Solutions
+                  Built by <a href="https://codecatalyst-solutions.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                    CodeCatalyst Solutions
+                  </a>
                 </li>
               </ul>
             </div>
