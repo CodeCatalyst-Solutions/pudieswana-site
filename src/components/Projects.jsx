@@ -13,7 +13,7 @@ const projects = [
       "Fabricated spares were produced to match the required drilling equipment specifications.",
     outcome:
       "Supported equipment uptime and reduced the need for repeated part sourcing.",
-    image: "/projects/number1.png",
+    image: "/projects/optimized/number1.webp",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
       "Produced and supplied the bracket and impeller-related fabricated parts for the equipment.",
     outcome:
       "Improved part availability for ongoing maintenance and assembly work.",
-    image: "/projects/number2.png",
+    image: "/projects/optimized/number2.webp",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const projects = [
     solution:
       "Supplied a special impeller and a ball valve suited to the application.",
     outcome: "Helped keep the system aligned to mining site requirements.",
-    image: "/projects/number3.png",
+    image: "/projects/optimized/number3.webp",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const projects = [
     solution:
       "Fabricated and supplied the bracket, clamps, and fittings required for the setup.",
     outcome: "Improved installation support and component stability.",
-    image: "/projects/number4.png",
+    image: "/projects/optimized/number4.webp",
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const projects = [
     solution:
       "Produced roof support face plate components for mining support use.",
     outcome: "Strengthened the company's underground support capability.",
-    image: "/projects/number5.png",
+    image: "/projects/optimized/number5.webp",
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const projects = [
       "Completed ground ripper attachment work and conveyor belt installation, extension, splicing, and belt structure reclamation.",
     outcome:
       "Improved conveyor functionality and extended operating performance.",
-    image: "/projects/number6.png",
+    image: "/projects/optimized/number6.webp",
   },
   {
     id: 7,
@@ -87,7 +87,7 @@ const projects = [
       "Supplied 10 mm short link GAV chain and butterfly valves for industrial use.",
     outcome:
       "Added to the company's supply capability for mining and engineering clients.",
-    image: "/projects/number7.png",
+    image: "/projects/optimized/number7.webp",
   },
   {
     id: 8,
@@ -98,7 +98,7 @@ const projects = [
     solution:
       "Applied rubber lining to help protect components in demanding conditions.",
     outcome: "Improved service life and resistance to wear.",
-    image: "/projects/number8.png",
+    image: "/projects/optimized/number8.webp",
   },
   {
     id: 9,
@@ -111,7 +111,7 @@ const projects = [
       "Completed stripping, repair, refurbishment, rebuilding, and maintenance work on TMM3 units.",
     outcome:
       "Restored equipment for continued use and operational reliability.",
-    image: "/projects/number9.png",
+    image: "/projects/optimized/number9.webp",
   },
   {
     id: 10,
@@ -124,7 +124,7 @@ const projects = [
       "Used the sandblasting, welding/NDT testing, painting, and inspection bays to process and assess components.",
     outcome:
       "Created a structured workflow for quality control and maintenance.",
-    image: "/projects/number10.png",
+    image: "/projects/optimized/number10.webp",
   },
   {
     id: 11,
@@ -135,7 +135,7 @@ const projects = [
     solution:
       "Redesigned and manufactured a new hydraulic brake block to improve service access.",
     outcome: "Improved maintainability and reduced service difficulty.",
-    image: "/projects/number11.png",
+    image: "/projects/optimized/number11.webp",
   },
   {
     id: 12,
@@ -147,19 +147,19 @@ const projects = [
     solution:
       "Redesigned the overall power head frame and added DPF support to improve underground gas limitations.",
     outcome: "Improved equipment design for modern underground requirements.",
-    image: "/projects/number12.png",
+    image: "/projects/optimized/number12.webp",
   },
   {
     id: 13,
     category: "Refurbishment & Maintenance",
     title: "Group Pump Repair",
-    summary: "In progress assembly of new generation design mode",
+    summary: "In-progress assembly of a new generation design model.",
     problem:
       "The operation needed repaired complete units and structured assembly work.",
     solution:
       "Used the assembly bay to repair the group pump complete unit and support new generation model work.",
     outcome: "Improved repair capability and assembly output.",
-    image: "/projects/number13.png",
+    image: "/projects/optimized/number13.webp",
   },
   {
     id: 14,
@@ -170,7 +170,7 @@ const projects = [
     solution:
       "Integrated an inline priority valve into the steering system design.",
     outcome: "Enhanced steering control and system responsiveness.",
-    image: "/projects/number14.png",
+    image: "/projects/optimized/number14.webp",
   },
   {
     id: 15,
@@ -182,7 +182,7 @@ const projects = [
     solution:
       "Completed fabrication output towards assembly, including LHD Project 1 fabrication.",
     outcome: "Demonstrated strong fabrication-to-assembly capability.",
-    image: "/projects/number15.png",
+    image: "/projects/optimized/number15.webp",
   },
 ];
 
@@ -223,12 +223,9 @@ export default function Projects() {
         </h1>
 
         {/* Featured image */}
-        <div
-          className="mt-16 w-full rounded-2xl overflow-hidden bg-white/10"
-          style={{ height: "430px" }}
-        >
+        <div className="mt-12 h-[300px] w-full overflow-hidden rounded-lg border border-white/10 bg-white/10 sm:h-[430px]">
           <img
-            src="/projects/project_featured.jpeg"
+            src="/projects/optimized/project_featured.webp"
             alt="Featured project"
             className="w-full h-full object-cover"
           />
@@ -267,13 +264,13 @@ export default function Projects() {
             <button
               key={project.id}
               onClick={() => setSelectedProject(project)}
-              className="text-left bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden hover:bg-white/15 transition border border-white/5"
+              className="overflow-hidden rounded-lg border border-white/10 bg-white/10 text-left backdrop-blur-sm transition hover:bg-white/15"
             >
-              {/* ✅ object-cover so images fill the card container perfectly */}
               <div className="w-full h-56 overflow-hidden bg-gray-900">
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
@@ -295,13 +292,13 @@ export default function Projects() {
         </div>
 
         {/* CTA */}
-        <div className="min-h-screen flex flex-col items-center justify-center pb-24 px-4">
-          <h1 className="text-purple-500 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
+        <div className="my-20 border-y border-white/10 px-4 py-16">
+          <h2 className="mb-6 text-3xl font-bold leading-tight text-purple-500 sm:text-4xl md:text-5xl">
             Ready for bold results? <br />
             <span className="text-gray-300 text-xl sm:text-2xl font-normal">
               Contact Pudieswana Engineering & Mining now.
             </span>
-          </h1>
+          </h2>
           <Link to="/contact">
             <button className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full font-semibold">
               Request a Quote
@@ -310,16 +307,16 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Modal — ✅ fully scrollable, full image visible */}
+      {/* Modal */}
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
-          <div className="w-full max-w-2xl rounded-3xl bg-gray-950 border border-white/10 shadow-2xl max-h-[90vh] overflow-y-auto">
+          <div className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-xl border border-white/10 bg-gray-950 shadow-2xl">
             {/* Close button pinned to top-right of the modal box */}
             <div className="relative">
               <img
                 src={selectedProject.image}
                 alt={selectedProject.title}
-                className="w-full rounded-t-3xl object-contain bg-gray-900"
+                className="w-full rounded-t-xl object-contain bg-gray-900"
               />
               <button
                 onClick={() => setSelectedProject(null)}

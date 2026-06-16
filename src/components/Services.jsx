@@ -23,31 +23,54 @@ const iconItems = [
 export default function Services() {
   return (
     <section id="services" className="py-20 px-6 text-white">
-      <div className="max-w-7xl mx-auto px-4 text-center">
-        {/* Full viewport hero */}
-        <div className="min-h-screen flex flex-col items-center justify-center pb-24 px-4">
-          <h1 className="text-purple-500 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Industrial Services <br />
-            <span className="text-gray-300 text-xl sm:text-2xl font-normal">
-              Modern, Reliable, Corporate-strength.
-            </span>
-          </h1>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
-            <Link to="/contact">
-              <button className="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full font-semibold">
-                Explore Services
-              </button>
-            </Link>
-            <Link to="/contact">
-              <button className="w-full sm:w-auto border border-green-400 text-green-400 hover:bg-green-400 hover:text-black px-6 py-3 rounded-full font-semibold">
-                Contact Us
-              </button>
-            </Link>
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid items-center gap-12 pb-16 text-left lg:grid-cols-[0.9fr_1fr] lg:pb-20">
+          <div className="relative overflow-hidden rounded-lg border border-white/10 bg-white/5 shadow-2xl">
+            <img
+              src="/services/services_engineering.jpeg"
+              alt="Engineering fabrication service work"
+              className="h-[300px] w-full object-cover sm:h-[420px] lg:h-[500px]"
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent p-5">
+              <p className="text-sm font-semibold text-white">
+                Fabrication, mining support, construction, transport, cleaning,
+                and supply
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.26em] text-green-400">
+              Industrial service coverage
+            </p>
+            <h1 className="mb-6 text-4xl font-bold leading-tight text-purple-500 sm:text-5xl lg:text-6xl">
+              Practical support for demanding sites
+            </h1>
+            <p className="max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl">
+              Modern, reliable, corporate-strength services for mining,
+              engineering, construction, logistics, cleaning, and supply needs.
+            </p>
+
+            <div className="mt-8 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
+              <a href="#service-grid">
+                <button className="w-full rounded-full bg-purple-600 px-6 py-3 font-semibold hover:bg-purple-700 sm:w-auto">
+                  Explore Services
+                </button>
+              </a>
+              <Link to="/contact">
+                <button className="w-full rounded-full border border-green-400 px-6 py-3 font-semibold text-green-400 hover:bg-green-400 hover:text-black sm:w-auto">
+                  Contact Us
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
 
         {/* Service Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div
+          id="service-grid"
+          className="grid grid-cols-1 gap-6 sm:grid-cols-3"
+        >
           {[
             {
               category: "Engineering",
@@ -65,8 +88,8 @@ export default function Services() {
               image: "/services/services_construction.jpg",
             },
             {
-              category: "Transportaion",
-              title: "waste removal, trucking, transporting workers",
+              category: "Transportation",
+              title: "Waste removal, trucking, transporting workers",
               image: "/services/services_transportation.jpeg",
             },
             {
@@ -83,16 +106,17 @@ export default function Services() {
           ].map(({ category, title, image }) => (
             <div
               key={category}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col min-h-64"
+              className="flex min-h-64 flex-col rounded-lg border border-white/10 bg-white/10 p-5 text-left backdrop-blur-sm"
             >
-              <div className="flex-1 flex items-center justify-center">
+              <div className="flex flex-1 items-center justify-center">
                 <img
                   src={image}
                   alt={category}
-                  className="w-full h-40 object-cover rounded-xl"
+                  loading="lazy"
+                  className="h-40 w-full rounded-md object-cover"
                 />
               </div>
-              <div className="text-center mt-6">
+              <div className="mt-5">
                 <p className="text-sm text-gray-400 mb-1">{category}</p>
                 <h3 className="text-white font-semibold text-lg">{title}</h3>
               </div>

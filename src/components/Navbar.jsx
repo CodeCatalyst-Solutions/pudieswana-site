@@ -1,26 +1,30 @@
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="text-white shadow-md">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <nav className="sticky top-0 z-40 border-b border-white/10 bg-gray-950/85 text-white shadow-md backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex min-w-0 items-center gap-3">
           <img
             src="/pudieswana-logo.png"
             alt="Pudieswana"
-            className="h-8 w-8 object-contain"
+            className="h-9 w-9 flex-none object-contain"
           />
-          <h1 className="text-xl font-bold text-purple-500">
-            Pudieswana Engineering & Mining
-          </h1>
-        </div>
+          <span className="truncate text-lg font-bold text-purple-500 sm:text-xl">
+            <span className="sm:hidden">Pudieswana</span>
+            <span className="hidden sm:inline">
+              Pudieswana Engineering & Mining
+            </span>
+          </span>
+        </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden items-center space-x-8 md:flex">
           <Link to="/" className="hover:text-green-400">
             Home
           </Link>
@@ -39,14 +43,19 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          ☰
+        <button
+          className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-white hover:bg-white/10 md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+        >
+          {isOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-6 pb-4 space-y-3">
+        <div className="space-y-3 border-t border-white/10 px-6 pb-5 pt-4 text-left md:hidden">
           <Link
             to="/"
             className="block hover:text-green-400"

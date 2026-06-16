@@ -8,14 +8,14 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row justify-between items-start gap-10">
-          <Link to="/" className="hover:text-white">
+          <Link to="/" className="text-left hover:text-white">
             <div className="flex items-center gap-2">
               <img
                 src="/pudieswana-logo.png"
                 alt="Pudieswana"
                 className="h-8 w-8 object-contain"
               />
-              <span className="text-white font-bold text-lg">
+              <span className="max-w-xs text-lg font-bold leading-snug text-white">
                 Pudieswana Engineering & Mining
               </span>
             </div>
@@ -64,10 +64,10 @@ export default function Footer() {
                 <li>Randfontein, Gauteng, South Africa</li>
                 <li>
                   <a
-                    href="mailto:info@pudieswana.co.za"
+                    href="mailto:info@pudieswanaengineering.co.za"
                     className="hover:text-white"
                   >
-                    info@pudieswana.co.za
+                    info@pudieswanaengineering.co.za
                   </a>
                 </li>
                 <li className="text-purple-400">
